@@ -1,0 +1,7 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.buttonConnectionRed{
+    -fx-background-color: #e86262;
+    -fx-border-radius: 5px;
+    -fx-text-fill: whitesmoke;
+    -fx-border-width: 10px;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FormationController">
+   <left>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="800.0" style="-fx-background-color: fff6f6;" BorderPane.alignment="CENTER">
+         <children>
+         <TableView fx:id="tableFrm" layoutX="85.0" layoutY="396.0" prefHeight="204.0" prefWidth="648.0">
+              <columns>
+                <TableColumn fx:id="colIdFrm" prefWidth="76.79998779296875" text="Id" />
+                <TableColumn fx:id="colcodeFrm" prefWidth="145.60003662109375" text="Code" />
+                <TableColumn fx:id="collibelleFrm" prefWidth="210.4000244140625" text="Libelle" />
+                <TableColumn fx:id="coldescriptionFrm" prefWidth="216.0" text="Description" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnemp" layoutX="231.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnemp" text="EMPLOYE" textAlignment="CENTER" />
+            <Button fx:id="btnsess" layoutX="489.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnsess" text="SESSION" />
+            <Button fx:id="btnfrm" defaultButton="true" layoutX="354.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnfrm" style="-fx-background-color: ff8264;" text="FORMATION" textFill="WHITE" />
+            <TextField fx:id="acodeFrm" layoutX="75.0" layoutY="135.0" prefHeight="17.0" prefWidth="113.0" promptText="Code" />
+            <TextField fx:id="alibelleFrm" layoutX="75.0" layoutY="165.0" prefHeight="17.0" prefWidth="113.0" promptText="libelle" />
+            <TextField fx:id="adescriptionFrm" layoutX="75.0" layoutY="195.0" prefHeight="17.0" prefWidth="113.0" promptText="Description" />
+            <TextField fx:id="ucodeFrm" layoutX="352.0" layoutY="164.0" prefHeight="17.0" prefWidth="113.0" promptText="code" />
+            <TextField fx:id="ulibelleFrm" layoutX="352.0" layoutY="194.0" prefHeight="17.0" prefWidth="113.0" promptText="libelle" />
+            <TextField fx:id="udescriptionFrm" layoutX="352.0" layoutY="224.0" prefHeight="17.0" prefWidth="113.0" promptText="Description" />
+            <TextField fx:id="uidFrm" layoutX="352.0" layoutY="134.0" prefHeight="17.0" prefWidth="113.0" promptText="id" />
+            <TextField fx:id="dlidFrm" layoutX="624.0" layoutY="136.0" prefHeight="17.0" prefWidth="113.0" promptText="id" />
+            <Button fx:id="addFrm" layoutX="112.0" layoutY="243.0" mnemonicParsing="false" onAction="#addFormation" style="-fx-background-color: #2f9d77;" text="Add" textFill="WHITE" />
+            <Button fx:id="updateFrm" layoutX="380.0" layoutY="271.0" mnemonicParsing="false" onAction="#updateFormation" style="-fx-background-color: green;" text="Update" textFill="WHITE" />
+            <Button fx:id="deleteFrm" layoutX="653.0" layoutY="182.0" mnemonicParsing="false" onAction="#deleteFormation" style="-fx-background-color: red;" text="Delete" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <img src="/Images/icon.png">
+        </div>
+        <div class="menu">
+            <a href="#">Accueil</a>
+            <a href="#">A propos</a>
+            <a href="#">Formations</a>
+        </div>
+    </header>
+    <div class="espace"></div>
+    <div class="espace"></div>
+    <h1> Bienvenue ! </h1>
+    <div class="espace"></div>
+    <section class="section1">
+        <div>
+            <p>Bénéficiez de nos formations en ligne.</p>
+        </div>
+    </section>
+    <section class="section2">
+
+        <% let n= 1
+         session.forEach(function (sess) { 
+             %>
+            
+        <div class="formation">
+            <h2> Session <%= n++ %> </h2>
+            <ul><br>
+                <li> <%= sess.code %> </li><br>
+                <li> <%= sess.libelle %>  </li><br>
+                <li> <%= sess.formation %>  </li><br>
+                
+            </ul>
+        </div>
+        <% }) %>
+       
+    </section>
+    <div class="espace"></div>
+    <div class="espace"></div>
+</body>
+</html>

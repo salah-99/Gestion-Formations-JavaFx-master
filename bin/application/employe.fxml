@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeController">
+   <left>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+         <TableView fx:id="tableEmp" layoutX="85.0" layoutY="396.0" prefHeight="204.0" prefWidth="648.0">
+              <columns>
+                <TableColumn fx:id="colIdEmp" prefWidth="68.79998779296875" text="Id" />
+                <TableColumn fx:id="colMatriculeEmp" prefWidth="140.0" text="Matricule" />
+                <TableColumn fx:id="colNomPrenomEmp" prefWidth="153.60003662109375" text="Nom Prenom" />
+                <TableColumn fx:id="colLoginEmp" prefWidth="152.79998779296875" text="Login" />
+                <TableColumn fx:id="colVilleEmp" prefWidth="135.99993896484375" text="Ville" />
+              </columns>
+            </TableView>
+            <Button fx:id="btnemp" defaultButton="true" layoutX="231.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnemp" text="EMPLOYE" textAlignment="CENTER" />
+            <Button fx:id="btnsess" layoutX="489.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnsess" text="SESSION" />
+            <Button fx:id="btnfrm" layoutX="354.0" layoutY="47.0" mnemonicParsing="false" onAction="#handleBtnfrm" text="FORMATION" />
+            <Text layoutX="75.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add" textAlignment="CENTER" wrappingWidth="100.04571533203125">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="350.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update" textAlignment="CENTER" wrappingWidth="100.04571533203125">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="626.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete" textAlignment="CENTER" wrappingWidth="100.04571533203125">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="amatriculeEmp" layoutX="75.0" layoutY="135.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="10.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="anomprenomEmp" layoutX="75.0" layoutY="165.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="1.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Prenom" textAlignment="CENTER" wrappingWidth="72.845703125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="aloginemp" layoutX="75.0" layoutY="195.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="10.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="apasswordEmp" layoutX="75.0" layoutY="225.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="10.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="avilleEmp" layoutX="75.0" layoutY="255.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="10.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="umatriculeEmp" layoutX="352.0" layoutY="164.0" prefHeight="17.0" prefWidth="113.0" />
+            <TextField fx:id="unomprenomEmp" layoutX="352.0" layoutY="194.0" prefHeight="17.0" prefWidth="113.0" />
+            <TextField fx:id="uloginemp" layoutX="352.0" layoutY="224.0" prefHeight="17.0" prefWidth="113.0" />
+            <TextField fx:id="upasswordEmp" layoutX="352.0" layoutY="254.0" prefHeight="17.0" prefWidth="113.0" />
+            <TextField fx:id="uvilleEmp" layoutX="352.0" layoutY="284.0" prefHeight="17.0" prefWidth="113.0" />
+            <TextField fx:id="uidEmp" layoutX="352.0" layoutY="134.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="287.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dlidEmp" layoutX="624.0" layoutY="136.0" prefHeight="17.0" prefWidth="113.0" />
+            <Text layoutX="559.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <Line endX="12.4000244140625" endY="227.19998168945312" layoutX="242.0" layoutY="120.0" startX="12.4000244140625" startY="0.7999954223632812" />
+            <Line endX="12.4000244140625" endY="227.19998168945312" layoutX="532.0" layoutY="120.0" startX="12.4000244140625" startY="0.7999954223632812" />
+            <Button fx:id="addEmp" layoutX="106.0" layoutY="305.0" mnemonicParsing="false" onAction="#addEmploye" text="Add" />
+            <Button fx:id="updateEmp" layoutX="380.0" layoutY="331.0" mnemonicParsing="false" onAction="#updateEmploye" text="Update" />
+            <Button fx:id="deleteEmp" layoutX="653.0" layoutY="182.0" mnemonicParsing="false" onAction="#deleteEmploye" text="Delete" />
+            <Text layoutX="287.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="278.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Prenom" textAlignment="CENTER" wrappingWidth="72.845703125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="287.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="287.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="287.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ville" textAlignment="CENTER" wrappingWidth="64.04571533203125">
+               <font>
+                  <Font name="Akhbar MT" size="12.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
